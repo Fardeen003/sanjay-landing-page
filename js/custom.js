@@ -19,6 +19,41 @@
 jQuery(function($) {
   "use strict";
 
+      /*=========================================================================
+
+         ===  MENU SCROLL FIXED
+
+         ========================================================================== */
+
+		 var s = $(".header");
+
+		 var pos = s.position();
+ 
+ 
+ 
+		 $(window).on('scroll', function () {
+ 
+			 var windowpos = $(window).scrollTop();
+ 
+			 if (windowpos >= pos.top) {
+ 
+				 s.addClass("menu-onscroll");
+ 
+			 } else {
+ 
+				 s.removeClass("menu-onscroll");
+ 
+			 }
+ 
+		 });
+ 
+ 
+ 
+		 /*=========================================================================
+ 
+		  ===  MENU SCROLL FIXED END
+ 
+		  ========================================================================== */
 
 	/* ----------------------------------------------------------- */
 	/*  Mobile Menu
@@ -36,7 +71,7 @@ jQuery(function($) {
 
 	if ( $( '.countdown' ).length > 0 ) {
 		$(".countdown").jCounter({
-		  	date: '21 October 2021 12:00:00',
+		  	date: '15 February 2025 12:00:00',
 		  	fallback: function() { console.log("count finished!") }
 		});
 	}

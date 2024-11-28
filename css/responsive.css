@@ -389,7 +389,9 @@
 	}
 
 	.logo img{
-		width: 180px !important;
+		/* width: 180px !important; */
+		width: 70px;
+		height: 70px;
 		background-size: contain !important;
 	}
 
