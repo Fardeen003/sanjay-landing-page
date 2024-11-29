@@ -155,18 +155,148 @@ section,
     z-index: 1;
 }
 
+
+/* Image Gallery */
+
+/* .img-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img-gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} */
+
+.img-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    /* max-width: 1200px; */
+    margin: 50px auto;
+    /* background: linear-gradient(to bottom, #f8f9fa, #e9ecef); Light gradient background */
+    /* border-radius: 12px; */
+    /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+}
+
+/* Add varying heights for images */
+.img-wrapper:nth-child(2n) {
+    grid-row: span 2; /* Makes the image take up more vertical space */
+}
+.img-wrapper:nth-child(3n) {
+    grid-column: span 2; /* Makes the image wider */
+}
+.img-wrapper:nth-child(5n) {
+    grid-row: span 2;
+    grid-column: span 2; /* Makes it both wider and taller */
+}
+
+.img-wrapper:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+    object-fit: cover;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.15);
+    filter: brightness(0.9); /* Slight darkening effect */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)); /* Gradient overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.caption {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Adds a frosted glass effect */
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .img-1{
+    width
+} */
+
 .header {
     background: transparent;
     transition: background 0.3s;
   }
-  
-  .menu-onscroll {
-    background: #fff; /* Adds a white background when scrolled */
-    color:black;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+
+  .intro-desc-container{
+    height: 200px;
+    overflow: hidden;
+    text-overflow: clip;
+    /* text-overflow: ellipsis; */
+    padding: 5px;
+    transition: all;
+    transition-duration: .9s;
+  }
+
+
+  .show-more{
+    height: auto;
   }
   
 /* Bootstrap No gutter */
@@ -616,10 +746,11 @@ a[href^=tel] {
 
 /* Header transparent */
 
+
 .header.header-transparent {
     background: none;
     box-shadow: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
@@ -629,9 +760,21 @@ a[href^=tel] {
     -o-transition: 350ms;
     transition: 350ms;
 }
+
+.menu-onscroll {
+    background: #fff !important; /* Adds a white background when scrolled */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+    width: 100%;
+  }
+
+
 .header-transparent ul.navbar-nav > li > a {
     color: #fff;
 }
+
+.menu-onscroll ul.navbar-nav > li > a{
+    color:black;
+  }
 
 .header-transparent .dropdown-menu.menu-center:before{
     content: "";
@@ -661,11 +804,17 @@ a[href^=tel] {
     color: #fff;
 }
 
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /*-- Logo --*/
 
 .logo {
-    padding: 22px 0;
+    padding: 10px 0;
 }
 
 /* Main navigation */

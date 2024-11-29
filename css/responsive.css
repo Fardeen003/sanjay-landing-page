@@ -366,6 +366,10 @@
 /* Small Devices Potrait */
 @media (max-width : 767px){
 
+
+	.header-wrapper{
+		display: block;
+	}
 	/* Top bar */
 
 	ul.top-info{
@@ -385,12 +389,12 @@
 
 	.logo{
 		text-align: center;
-		padding-left: 15px;
+		padding: 10px 10px 0px 15px;
 	}
 
 	.logo img{
 		/* width: 180px !important; */
-		width: 70px;
+		width: 100px;
 		height: 70px;
 		background-size: contain !important;
 	}

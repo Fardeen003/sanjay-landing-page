@@ -12,9 +12,10 @@
     />
 
     <!-- Site Title -->
-    <title>Sanjay Landing Page &amp; By - Fardeen</title>
+    <title>Agile Leadership Day India</title>
+    <meta name="author" content="Fardeen Qureshi"/>
 
-    <!--Favicon-->
+
     <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
 
@@ -27,6 +28,7 @@
          ================================================== -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Au6RUYdqnFxhsuWuG6Fh8Gnx65s18OBFcW9skJ0U39uw51TK6jTY3CBoR9XDh1gX" crossorigin="anonymous">
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive styles-->
@@ -47,6 +49,9 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./css/slider.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,14 +63,13 @@
   <body>
     <div class="body-inner">
       <!-- Header start -->
-      <header id="header" style="position: fixed;" class="header header-transparent">
+      <header id="header" class="header header-transparent">
         <div class="container">
-          <div class="row">
+          <div class=" align-items-center header-wrapper">
             <div class="navbar-header">
               <div class="logo">
                 <a href="index.html">
-                  <!-- <img src="images/logo.png" alt="" /> -->
-                   <img src="images/logos/product-leaders-day.png" alt="logo" width="100" height="100" />
+                   <img src="images/logos/logo (1).png" alt="logo" width="200" height="100" style="object-fit: contain;" />
                 </a>
               </div>
               <!-- logo end -->
@@ -119,7 +123,7 @@
                   <!-- Blog li end -->
                   <li><a href="#contact">Contact</a></li>
                   <li class="header-ticket">
-                    <a class="ticket-btn btn-primary" href="#"
+                    <a  style="color: white;" class="ticket-btn btn-primary" target="_blank" href="https://www.townscript.com/v2/e/aldi2025/booking/tickets"
                       >
                       <i class="fa fa-ticket"></i> 
                       Tickets</a
@@ -174,7 +178,8 @@
                 <!-- Countdown end -->
                 <h1 class="banner-title">Agile Leadership India</h1>
                 <h2 class="banner-subtitle">
-                  FEBRUARY, 15<sup>th</sup>, 2025
+                  Saturday, 15<sup>th</sup> Feb 2025
+                  <!-- FEBRUARY, 15<sup>th</sup> Sat, 2025 -->
                 </h2>
                 <h3 class="banner-desc">
                   Pllazio Hotel, Sector 29, Gurgaon
@@ -200,14 +205,31 @@
             <div class="col-xs-12 col-sm-12 col-md-6">
               <div class="gap-60"></div>
               <h2 class="intro-title">About the Event</h2>
-              <h3 class="intro-sub-title">How it All Started</h3>
+              <!-- <h3 class="intro-sub-title">How it All Started</h3> -->
+
+              <div class="intro-desc-container">
               <p class="intro-desc">
-                Product Leaders Day India is a premier gathering for professionals passionate about product management and leadership. This one-day event offers a platform to learn from and interact with some of the most influential leaders in the industry. Attendees will gain insights into cutting-edge practices, effective product leadership strategies, and the latest trends shaping the world of product management. Join us to empower your product leadership journey and drive your products towards success!
+                <!-- Product Leaders Day India is a premier gathering for professionals passionate about product management and leadership. This one-day event offers a platform to learn from and interact with some of the most influential leaders in the industry. Attendees will gain insights into cutting-edge practices, effective product leadership strategies, and the latest trends shaping the world of product management. Join us to empower your product leadership journey and drive your products towards success! -->
+                Agile approaches in modern business demand a paradigm shift in leadership. It is not about typical top-down control; rather, it is about encouraging team collaboration, adaptation, and empowerment. As Simon Sinek wisely put it, "Leadership is not about being in charge. It's about taking care of those in your charge."
                 <!-- We are rethoric question ran over her cheek When she reached the
                 first hills of the Italic Mountains, she had a last view back on
                 the skyline of her hometown Bookmarksgrove, the headline of
                 Alphabet Village and the subline of her own road, the Line Lane. -->
               </p>
+              <p>
+                Leaders in an agile environment act as facilitators, removing roadblocks and giving the support and resources needed for their teams to grow. They recognize that success is dependent not just on their knowledge, but also on the collective capabilities and inventiveness of their team members. Agile leadership entails cultivating a culture of trust, transparency, and continuous improvement in which every voice is heard, and innovation thrives.
+              </p>
+
+              <p>
+                Leaders who adopt this strategy empower their teams to adjust quickly to changing circumstances, offer customer value more efficiently, and create a healthy balance of autonomy and accountability. In summary, agile leadership exemplifies the value of cooperation and servant leadership in today's dynamic and fast-paced business environment.
+              </p>
+
+              <p>
+                We haven't met in a year, therefore it's time to get ready for Agile Leadership Day India on 20th Jan 2024 to get ready and meet people face to face. Reconnection in person has an undeniable energy, as the warmth of physical presence and the interchange of genuine emotions create an atmosphere of shared experiences and fresh relationships.
+              </p>
+
+            </div>
+
               <!-- <blockquote>
                 Throw myself down teems with vapour around me, and the meridian
                 sun strikes the upper surface of the impenetrable foliage of my
@@ -218,7 +240,7 @@
                 with the countless indescribable forms, then I feel the presence
                 of the Almighty.
               </p> -->
-                <!-- <p><a href="#" class="btn btn-primary">Know More</a></p> -->
+                <p><button onclick="handleReadMore()" class="btn btn-primary read-more">Read More</button></p>
             </div>
             <!-- Col end -->
             <div class="col-xs-12 col-sm-12 col-md-6">
@@ -561,7 +583,7 @@
                 <div class="ts-speaker-image">
                   <img
                     class="img-responsiv"
-                    src="images/speakers/profile-placeholder-1.png"
+                    src="images/speakers/multiple1.jpg"
                     alt=""
                     height="276"
                     width="262"
@@ -591,9 +613,9 @@
                   </ul>
                 </div>
                 <div class="ts-speaker-info">
-                  <h3 class="ts-speaker-name"><a href="#">Name</a></h3>
-                  <strong style="color:#6859de; font-size: 15px;">Designation</strong>
-                  <p class="ts-speaker-designation">Company</p>
+                  <h3 class="ts-speaker-name"><a href="#">Open House Session</a></h3>
+                  <strong style="color:#6859de; font-size: 15px;"> </strong>
+                  <p style="min-height: 48px;" class="ts-speaker-designation"> </p>
                 </div>
               </div>
 
@@ -659,7 +681,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="schedule-tab">
-                <ul class="nav nav-tabs" id="nav-tabs">
+                <!-- <ul class="nav nav-tabs" id="nav-tabs">
                   <li class="active">
                     <a
                       class="animated fadeIn"
@@ -693,20 +715,26 @@
                       </span>
                     </a>
                   </li>
-                </ul>
+                </ul> -->
                 <div class="tab-content">
                   <div
                     class="tab-pane active animated fadeInRight"
                     id="tab_one"
                   >
                     <h2 class="schedule-date">Saturday, 15th Feb 2025</h2>
-                    <div class="schedule-listing bg">
-                      <span class="schedule-slot-time">9:30 - 10:00</span>
+                    <div data-aos="flip-up" class="schedule-listing bg">
+                      <span class="schedule-slot-time">
+                        <!-- 9:30 - 10:00 -->
+                        9:30 AM to 10:00 AM
+                      </span>
+
                       <div class="schedule-slot-info">
                         <div class="schedule-slot-info-content">
-                          <h3 class="schedule-slot-title">Registration</h3>
+                          <h3 class="schedule-slot-title">Registration and Kick-off
+                          </h3>
                           <p class="schedule-slot-desc">
-                            Pick up your name badge and goodie bag
+                            <!-- Pick up your name badge and goodie bag -->
+                            Arrive early, grab a cup of coffee, and mingle with fellow attendees before the event kicks off.
                           </p>
                         </div>
                         <!--Info content end -->
@@ -714,98 +742,270 @@
                       <!-- Slot info end -->
                     </div>
                     <!-- Slot listing 1 end -->
-                    <div class="schedule-listing">
-                      <span class="schedule-slot-time">10:30 - 11:15AM</span>
+                    <div data-aos="fade-right" class="schedule-listing">
+                      <span class="schedule-slot-time">10:00 AM to 10:35 AM</span>
                       <div class="schedule-slot-info">
-                        <a href="#">
+                        <!-- <a href="#">
+                          <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker1.jpg"
+                            alt=""
+                          /> -->
+                        </a>
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Edward C. Horner -->
+                            Session 1
+                          </h3>
+                          <h4 class="schedule-slot-title">
+                            <!-- Reinventing Experiences to All -->
+                            Speaker 1
+                          </h4>
+                          <!-- <p class="schedule-slot-desc">
+                            Throw myself down teems with vapour around me, and
+                            the meridian sun strikes the upper surface of the
+                            impenetrable.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+
+                    <div data-aos="fade-left" class="schedule-listing">
+                      <span class="schedule-slot-time">10:40 AM to 11:15 AM
+                      </span>
+                      <div class="schedule-slot-info">
+                        <!-- <a href="#">
                           <img
                             class="schedule-slot-speakers"
                             src="images/speakers/speaker1.jpg"
                             alt=""
                           />
-                        </a>
+                        </a> -->
                         <div class="schedule-slot-info-content">
                           <h3 class="schedule-slot-speaker-name">
-                            Edward C. Horner
+                            <!-- Edward C. Horner -->
+                            Session 2
                           </h3>
                           <h4 class="schedule-slot-title">
-                            Reinventing Experiences to All
+                            <!-- Reinventing Experiences to All -->
+                            Speaker 2
                           </h4>
-                          <p class="schedule-slot-desc">
+                          <!-- <p class="schedule-slot-desc">
                             Throw myself down teems with vapour around me, and
                             the meridian sun strikes the upper surface of the
                             impenetrable.
-                          </p>
+                          </p> -->
                         </div>
                         <!--Info content end -->
                       </div>
                       <!-- Slot info end -->
                     </div>
                     <!-- Slot listing 2 end -->
-                    <div class="schedule-listing bg">
-                      <span class="schedule-slot-time">11:15 - 13:15PM</span>
+                    <div data-aos="flip-up" class="schedule-listing bg">
+                      <span class="schedule-slot-time">11:15 AM to 11:40 AM</span>
                       <div class="schedule-slot-info">
                         <a href="#">
-                          <img
+                          <!-- <img
                             class="schedule-slot-speakers"
                             src="images/speakers/speaker5.jpg"
                             alt=""
-                          />
+                          /> -->
                         </a>
                         <div class="schedule-slot-info-content">
                           <h3 class="schedule-slot-speaker-name">
-                            Summer Cross
+                            <!-- Summer Cross -->
+                            Tea Break
                           </h3>
-                          <h4 class="schedule-slot-title">
+                          <!-- <h4 class="schedule-slot-title">
                             Human Centered Design
                           </h4>
                           <p class="schedule-slot-desc">
                             Minim Austin 3 wolf moon scenester aesthetic, umami
                             odio pariatur bitters. Pop-up occaecat taxidermy
                             street art, tattooed beard literally.
-                          </p>
+                          </p> -->
                         </div>
                         <!--Info content end -->
                       </div>
                       <!-- Slot info end -->
                     </div>
-                    <!-- Slot listing 3 end -->
-                    <div class="schedule-listing">
-                      <span class="schedule-slot-time">13:30 - 14:30PM</span>
+
+                    <div data-aos="fade-right" class="schedule-listing">
+                      <span class="schedule-slot-time">11:45 AM to 12:20 PM</span>
                       <div class="schedule-slot-info">
-                        <div class="schedule-slot-info-content">
-                          <h3 class="schedule-slot-title">Lunch</h3>
-                          <p class="schedule-slot-desc">
-                            Five star buffet for everybody.
-                          </p>
-                        </div>
-                        <!--Info content end -->
-                      </div>
-                      <!-- Slot info end -->
-                    </div>
-                    <!-- Slot listing 4 end -->
-                    <div class="schedule-listing bg">
-                      <span class="schedule-slot-time">14:35 - 16:00PM</span>
-                      <div class="schedule-slot-info">
-                        <a href="#">
+                        <!-- <a href="#">
                           <img
                             class="schedule-slot-speakers"
-                            src="images/speakers/speaker3.jpg"
+                            src="images/speakers/speaker1.jpg"
                             alt=""
                           />
+                        </a> -->
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Edward C. Horner -->
+                            Session 3
+                          </h3>
+                          <h4 class="schedule-slot-title">
+                            <!-- Reinventing Experiences to All -->
+                            Speaker 3
+                          </h4>
+                          <!-- <p class="schedule-slot-desc">
+                            Throw myself down teems with vapour around me, and
+                            the meridian sun strikes the upper surface of the
+                            impenetrable.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+
+                    <div data-aos="fade-left" class="schedule-listing">
+                      <span class="schedule-slot-time">12:25 PM to 1:00 PM
+                      </span>
+                      <div class="schedule-slot-info">
+                        <!-- <a href="#">
+                          <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker1.jpg"
+                            alt=""
+                          />
+                        </a> -->
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Edward C. Horner -->
+                            Session 4
+                          </h3>
+                          <h4 class="schedule-slot-title">
+                            <!-- Reinventing Experiences to All -->
+                            Speaker 4
+                          </h4>
+                          <!-- <p class="schedule-slot-desc">
+                            Throw myself down teems with vapour around me, and
+                            the meridian sun strikes the upper surface of the
+                            impenetrable.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+                    <!-- Slot listing 2 end -->
+                    <div data-aos="flip-up" class="schedule-listing bg">
+                      <span class="schedule-slot-time">1:00 PM to 2:00 PM</span>
+                      <div class="schedule-slot-info">
+                        <a href="#">
+                          <!-- <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker5.jpg"
+                            alt=""
+                          /> -->
                         </a>
                         <div class="schedule-slot-info-content">
                           <h3 class="schedule-slot-speaker-name">
-                            Laura Bryant
+                            <!-- Summer Cross -->
+                            Lunch
                           </h3>
-                          <h4 class="schedule-slot-title">
-                            A frontier for designers: cultures of creativity
+                          <!-- <h4 class="schedule-slot-title">
+                            Human Centered Design
                           </h4>
                           <p class="schedule-slot-desc">
-                            Plaid fashion axe semiotics skateboard, try-hard
-                            food truck aesthetic biodiesel exercitation.
-                            Accusamus VHS Wes Anderson Banksy food truck vero.
-                          </p>
+                            Minim Austin 3 wolf moon scenester aesthetic, umami
+                            odio pariatur bitters. Pop-up occaecat taxidermy
+                            street art, tattooed beard literally.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+
+                    <div data-aos="fade-left" class="schedule-listing">
+                      <span class="schedule-slot-time">2:10 PM to 2:45 PM</span>
+                      <div class="schedule-slot-info">
+                        <!-- <a href="#">
+                          <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker1.jpg"
+                            alt=""
+                          />
+                        </a> -->
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Edward C. Horner -->
+                            Session 5
+                          </h3>
+                          <h4 class="schedule-slot-title">
+                            <!-- Reinventing Experiences to All -->
+                            Speaker 5
+                          </h4>
+                          <!-- <p class="schedule-slot-desc">
+                            Throw myself down teems with vapour around me, and
+                            the meridian sun strikes the upper surface of the
+                            impenetrable.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+
+                    <div data-aos="fade-right" class="schedule-listing">
+                      <span class="schedule-slot-time">2:50 PM to 3:25 PM
+                      </span>
+                      <div class="schedule-slot-info">
+                        <!-- <a href="#">
+                          <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker1.jpg"
+                            alt=""
+                          />
+                        </a> -->
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Edward C. Horner -->
+                            Session 6
+                          </h3>
+                          <h4 class="schedule-slot-title">
+                            <!-- Reinventing Experiences to All -->
+                            Open House
+                          </h4>
+                          <!-- <p class="schedule-slot-desc">
+                            Throw myself down teems with vapour around me, and
+                            the meridian sun strikes the upper surface of the
+                            impenetrable.
+                          </p> -->
+                        </div>
+                        <!--Info content end -->
+                      </div>
+                      <!-- Slot info end -->
+                    </div>
+                    <!-- Slot listing 2 end -->
+                    <div data-aos="fade-down" class="schedule-listing bg">
+                      <span class="schedule-slot-time">3:25 PM to 3:30 PM </span>
+                      <div class="schedule-slot-info">
+                        <a href="#">
+                          <!-- <img
+                            class="schedule-slot-speakers"
+                            src="images/speakers/speaker5.jpg"
+                            alt=""
+                          /> -->
+                        </a>
+                        <div class="schedule-slot-info-content">
+                          <h3 class="schedule-slot-speaker-name">
+                            <!-- Summer Cross -->
+                            Closing
+                          </h3>
+                          <!-- <h4 class="schedule-slot-title">
+                            Human Centered Design
+                          </h4>
+                          <p class="schedule-slot-desc">
+                            Minim Austin 3 wolf moon scenester aesthetic, umami
+                            odio pariatur bitters. Pop-up occaecat taxidermy
+                            street art, tattooed beard literally.
+                          </p> -->
                         </div>
                         <!--Info content end -->
                       </div>
@@ -1264,8 +1464,9 @@
               <div class="content-wrapper">
                   <div style="margin: 0px;text-align: start;padding-bottom: 20px;" class="section-btn-area">
                       <!-- <a class="lgx-btn" href="about.html">More About</a> -->
-                      <a class="btn btn-primary" href="https://www.townscript.com/v2/e/PLDI2024/booking/tickets" target="_blank">Buy Ticket</a>
+                      <a class="btn btn-primary" href="https://www.townscript.com/v2/e/aldi2025/booking/tickets" target="_blank">Buy Ticket</a>
                   </div>
+                  
                  <!-- <a href="https://www.townscript.com/v2/e/scrum-day-india-2024/booking/tickets" target="_blank" class="btn">Buy Ticket</a> -->
               </div>
               <div class="content-wrapper">
@@ -1287,7 +1488,7 @@
 
          <div class="col-md-4 col-sm-6">
            <div class="outcome-content">
-              <a href="https://www.townscript.com/v2/e/AgileWoW-PSM-9-10-Nov-2024/booking/tickets"
+              <a href="https://www.townscript.com/v2/e/aldi2025/booking/tickets"
                target="_blank">
                  <div class="outcome-img ">
 
@@ -1318,203 +1519,9 @@
 </section>
 
 
+<!-- Pricing -->
 
-
-      <section id="ts-pricing" class="ts-pricing">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="ts-pricing-box">
-                <div class="ts-pricing-header">
-                  <h2 class="ts-pricing-name">Early Bird</h2>
-                  <h2 class="ts-pricing-price">
-                    <span class="currency">$</span><strong>219</strong
-                    ><small>/Person</small>
-                  </h2>
-                </div>
-                <!-- Pricing header end-->
-                <div class="ts-pricing-features">
-                  <ul class="list-unstyled">
-                    <li class="check">Get Access to all Sessions</li>
-                    <li class="check">Unlimited Coffee and Foods</li>
-                    <li class="un-check">Meet with Favorite Speakers</li>
-                    <li class="un-check">
-                      Access to all Audio and Video Files
-                    </li>
-                  </ul>
-                </div>
-                <!-- Features end -->
-                <div class="plan-action">
-                  <a href="#" class="btn btn-primary"
-                    ><i class="fa fa-ticket"></i> Join Now</a
-                  >
-                </div>
-                <!-- Button end -->
-              </div>
-              <!-- Plan 1 end -->
-            </div>
-            <!-- Col end -->
-            <div class="col-md-4">
-              <div class="ts-pricing-box pricing-featured">
-                <div class="ts-pricing-header">
-                  <h2 class="ts-pricing-name">Regular</h2>
-                  <h2 class="ts-pricing-price">
-                    <span class="currency">$</span><strong>310</strong
-                    ><small>/Person</small>
-                  </h2>
-                </div>
-                <!-- Pricing header end-->
-                <div class="ts-pricing-features">
-                  <ul class="list-unstyled">
-                    <li class="check">Get Access to all Sessions</li>
-                    <li class="check">Unlimited Coffee and Foods</li>
-                    <li class="check">Meet with Favorite Speakers</li>
-                    <li class="un-check">
-                      Access to all Audio and Video Files
-                    </li>
-                  </ul>
-                </div>
-                <!-- Features end -->
-                <div class="plan-action">
-                  <a href="#" class="btn btn-primary"
-                    ><i class="fa fa-ticket"></i> Join Now</a
-                  >
-                </div>
-                <!-- Button end -->
-              </div>
-              <!-- Plan 2 end -->
-            </div>
-            <!-- Col end -->
-            <div class="col-md-4">
-              <div class="ts-pricing-box">
-                <div class="ts-pricing-header">
-                  <h2 class="ts-pricing-name">Last Chance</h2>
-                  <h2 class="ts-pricing-price">
-                    <span class="currency">$</span><strong>379</strong
-                    ><small>/Person</small>
-                  </h2>
-                </div>
-                <!-- Pricing header end-->
-                <div class="ts-pricing-features">
-                  <ul class="list-unstyled">
-                    <li class="check">Get Access to all Sessions</li>
-                    <li class="check">Unlimited Coffee and Foods</li>
-                    <li class="check">Meet with Favorite Speakers</li>
-                    <li class="check">Access to all Audio and Video Files</li>
-                  </ul>
-                </div>
-                <!-- Features end -->
-                <div class="plan-action">
-                  <a href="#" class="btn btn-primary"
-                    ><i class="fa fa-ticket"></i> Join Now</a
-                  >
-                </div>
-                <!-- Button end -->
-              </div>
-              <!-- Plan 3 end -->
-            </div>
-            <!-- Col end -->
-          </div>
-          <!--/ Content row end -->
-        </div>
-        <!-- Conatiner end -->
-      </section>
-      <!-- Pricing end -->
-
-      <section id="blog" class="blog solid-bg">
-        <div class="container">
-          <div class="row text-center">
-            <h2 class="section-title">Whats going on</h2>
-            <h3 class="section-sub-title">Event Blog</h3>
-          </div>
-          <!--/ Title row end -->
-          <div class="row">
-            <div class="col-md-4 col-xs-12">
-              <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="#" class="latest-post-img">
-                    <img
-                      class="img-responsive"
-                      src="images/blog/blog1.jpg"
-                      alt="img"
-                    />
-                  </a>
-                  <div class="post-item-date">
-                    <span class="day">29</span>
-                    <span class="month">Nov</span>
-                  </div>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                    <a href="#"
-                      >3 Best Practices for Keeping Your Corporate Event Clients
-                      Happy</a
-                    >
-                  </h4>
-                </div>
-              </div>
-              <!-- Latest post end -->
-            </div>
-            <!-- 1st post col end -->
-            <div class="col-md-4 col-xs-12">
-              <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="#" class="latest-post-img">
-                    <img
-                      class="img-responsive"
-                      src="images/blog/blog2.jpg"
-                      alt="img"
-                    />
-                  </a>
-                  <div class="post-item-date">
-                    <span class="day">17</span>
-                    <span class="month">Aug</span>
-                  </div>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                    <a href="#"
-                      >Adding a New Digital Dimension to Your Next Special
-                      Event</a
-                    >
-                  </h4>
-                </div>
-              </div>
-              <!-- Latest post end -->
-            </div>
-            <!-- 2nd post col end -->
-            <div class="col-md-4 col-xs-12">
-              <div class="latest-post">
-                <div class="latest-post-media">
-                  <a href="#" class="latest-post-img">
-                    <img
-                      class="img-responsive"
-                      src="images/blog/blog3.jpg"
-                      alt="img"
-                    />
-                  </a>
-                  <div class="post-item-date">
-                    <span class="day">18</span>
-                    <span class="month">Sep</span>
-                  </div>
-                </div>
-                <div class="post-body">
-                  <h4 class="post-title">
-                    <a href="#"
-                      >West Elm At Evantor 2017 + Room Makeover Competition!</a
-                    >
-                  </h4>
-                </div>
-              </div>
-              <!-- Latest post end -->
-            </div>
-            <!-- 3rd post col end -->
-          </div>
-          <!--/ Content row end -->
-        </div>
-        <!--/ Container end -->
-      </section>
-      <!--/ Blog end -->
+ <!--Blogs-->
 
       <section id="ts-venue" class="ts-venue">
         <div class="container">
@@ -1527,10 +1534,14 @@
             <div class="col-md-6">
               <h3>Venue Details</h3>
               <p>
-                This year Eventor is happening at the brand new Jurys Inn
+                Located right at the heart of Gurugram, The Pllazio is a boutique hotel for Business and Leisure Travelers. The hotel's distinctive European architecture lends grandeur to an experiential stay.
+              </p>
+              <p>
+                The Pllazio Hotel's strategic location places you amidst the center of the city’s premier attractions, Business & Commercial Activities, and Recreation. Proximity to Airport as well as Metro Rail (Closest Metro Station is 2 min. away) and, an easy connectivity to Central Delhi makes a stay here not only luxurious but also convenient for all kind of travelers to NCR.
+                <!-- This year Eventor is happening at the brand new Jurys Inn
                 Brighton Waterfront Hotel, Brighton, London. One of the UK's
                 iconic and beautiful location. You will join over 300 attendies
-                in one of the best Conference venue in Europe.
+                in one of the best Conference venue in Europe. -->
               </p>
               <div class="contact-info">
                 <div class="contact-info-box">
@@ -1546,12 +1557,13 @@
                   <div class="contact-info-box-content">
                     <h4>Email:</h4>
                     <p>
-                      <a
+                      <a href="mailto:support@agilewow.com" target="_blank">support@agilewow.com</a>
+                      <!-- <a
                         href="https://demo.themewinter.com/cdn-cgi/l/email-protection"
                         class="__cf_email__"
                         data-cfemail="493a3c3939263b3d092c31282439252c672a2624"
                         >[email&#160;protected]</a
-                      >
+                      > -->
                     </p>
                   </div>
                 </div>
@@ -1559,18 +1571,130 @@
                   <i class="fa fa-phone">&nbsp;</i>
                   <div class="contact-info-box-content">
                     <h4>Phone:</h4>
-                    <p>+1(0123) 4567 890, +1(0231) 3421 453</p>
+                    <a href="tel:+91-8368865197" target="_blank">+91-8368865197</a>
                   </div>
                 </div>
               </div>
               <!-- contact info end -->
             </div>
             <!-- Col end -->
-            <div class="col-md-6">
-              <img src="images/venue-img.jpg" alt="" />
+            <div  data-aos="fade-left" class="col-md-6">
+              <img src="images/venue.jpg" alt="" />
             </div>
+
+ 
+          <!-- Slider  Start-->
+          <!-- <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/venue/1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/venue/1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/venue/1.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+
+
+          <!-- Slider Ends-->
             <!-- Col end -->
           </div>
+
+          <div class="img-gallery-container">
+
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <img src="./images/venue/1.jpeg" alt="Image 2" />
+                <div class="overlay">
+                    <div class="caption">Beautiful Venue 2</div>
+                </div>
+            </div>
+
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="700">
+              <img src="./images/venue/2.jpeg" alt="Image 7" />
+              <div class="overlay">
+                  <div class="caption">Beautiful Venue 7</div>
+              </div>
+          </div>
+          <div class="img-wrapper" data-aos="fade-up" data-aos-delay="800">
+              <img src="./images/venue/3.jpeg" alt="Image 8" />
+              <div class="overlay">
+                  <div class="caption">Beautiful Venue 8</div>
+              </div>
+          </div>
+          <div class="img-wrapper" data-aos="fade-up" data-aos-delay="900">
+              <img src="./images/venue/4.jpeg" alt="Image 9" />
+              <div class="overlay">
+                  <div class="caption">Beautiful Venue 9</div>
+              </div>
+          </div>
+
+          <div class="img-wrapper" data-aos="fade-up" data-aos-delay="900">
+            <img src="./images/venue/5.jpeg" alt="Image 9" />
+            <div class="overlay">
+                <div class="caption">Beautiful Venue 9</div>
+            </div>
+        </div>
+
+        <div class="img-wrapper" data-aos="fade-up" data-aos-delay="900">
+          <img src="./images/venue/6.jpeg" alt="Image 9" />
+          <div class="overlay">
+              <div class="caption">Beautiful Venue 9</div>
+          </div>
+      </div>
+
+          <div class="img-wrapper" data-aos="fade-up" data-aos-delay="1000">
+              <img src="./images/venue/7.jpeg" alt="Image 10" />
+              <div class="overlay">
+                  <div class="caption">Beautiful Venue 10</div>
+              </div>
+          </div>
+
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="100">
+              <img src="./images/venue/10.jpeg" alt="Image 1" />
+              <div class="overlay">
+                  <div class="caption">Beautiful Venue 1</div>
+              </div>
+          </div>
+
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <img src="./images/venue/11.jpeg" alt="Image 3" />
+                <div class="overlay">
+                    <div class="caption">Beautiful Venue 3</div>
+                </div>
+            </div>
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="400">
+                <img src="./images/venue/12.jpeg" alt="Image 4" />
+                <div class="overlay">
+                    <div class="caption">Beautiful Venue 4</div>
+                </div>
+            </div>
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="500">
+                <img src="./images/venue/13.jpeg" alt="Image 5" />
+                <div class="overlay">
+                    <div class="caption">Beautiful Venue 5</div>
+                </div>
+            </div>
+            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="600">
+                <img src="./images/venue/14.jpeg" alt="Image 6" />
+                <div class="overlay">
+                    <div class="caption">Beautiful Venue 6</div>
+                </div>
+            </div>
+     
+        </div>
+        
+
           <!-- Content row 1 end -->
           <div class="gap-60"></div>
           <div class="row text-center">
@@ -1729,7 +1853,7 @@
                 <ul class="nav unstyled">
                   <li><a href="#">Home</a></li>
                   <li><a href="#blog">Blog</a></li>
-                  <li><a href="#">Tickets</a></li>
+                  <li><a href="https://www.townscript.com/v2/e/aldi2025/booking/tickets" target="_blank">Tickets</a></li>
                   <li><a href="#">Faq</a></li>
                   <li><a href="#">Press</a></li>
                   <li><a href="#contact">Contact</a></li>
@@ -1737,34 +1861,35 @@
               </div>
               <!-- Footer menu end -->
               <div class="footer-logo">
-                <img src="images/logos/product-leaders-day.png" alt="footer-logo" width="100" height="100" />
+                <img src="images/logos/logo (1).png" alt="footer-logo" width="200" height="100" style="object-fit: contain;" />
                 <!-- <img src="images/footer-logo.png" alt="footer logo" /> -->
               </div>
               <div class="footer-social">
                 <ul>
                   <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/AgileWoW?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fagile_wow" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                   </li> 
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li> -->
+                  <li>
+                    <a href="https://www.youtube.com/@agilewow9158" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/agilewowindia/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   </li>
                 </ul>
               </div>
               <!-- Footer social end -->
               <div class="copyright-info">
-                <span>Copyright © 2018 . All Rights Reserved.</span>
+                <!-- <span>Copyright © 2018 . All Rights Reserved.</span> -->
+                 <span>© Copyright <a href="https://www.agileleadershipdayindia.org/">Agile Leadership Day India</a> 2024. All Rights Reserved</span>
               </div>
               <!-- Copyright info end -->
             </div>
@@ -1815,6 +1940,18 @@
       <script type="text/javascript" src="js/gmap3.js"></script>
       <!-- Template custom -->
       <script type="text/javascript" src="js/custom.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-04iGATTI8LgVCn2Z2zAQmQqaDRJEr7hTdR9tYgzzXOTjC3hDkE0GyBPlnVu8m5Ij" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script src="./js/script.js"></script>
+      <script src="./js/slider.js"></script>
+
+      <script>
+        AOS.init({
+          duration: 1000
+        });
+      </script>
     </div>
     <!-- Body inner end -->
   </body>

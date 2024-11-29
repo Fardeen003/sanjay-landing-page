@@ -34,13 +34,11 @@ jQuery(function($) {
 		 $(window).on('scroll', function () {
  
 			 var windowpos = $(window).scrollTop();
- 
-			 if (windowpos >= pos.top) {
- 
+			 
+			 if (windowpos > pos.top) {
 				 s.addClass("menu-onscroll");
  
 			 } else {
- 
 				 s.removeClass("menu-onscroll");
  
 			 }
