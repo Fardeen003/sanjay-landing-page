@@ -72,6 +72,10 @@
 /* Small Devices, Tablets */
 @media (min-width : 768px) and (max-width: 991px) {
 
+	.header-wrapper{
+		display: block;
+	}
+
 	/* top info */
 
 	ul.top-info li{
