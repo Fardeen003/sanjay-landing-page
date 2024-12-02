@@ -1769,14 +1769,17 @@ ul.navbar-nav > li:hover > a{
     margin-bottom: 5px;
     position: relative;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .schedule-listing.bg {
     background: #f5f5f5;
 }
 .schedule-slot-time {
     width: 20%;
-    float: left;
+    /* float: left; */
     font-weight: 700;
+    text-wrap: nowrap;
 }
 .schedule-slot-info {
     width: 80%;
@@ -3663,6 +3666,10 @@ label {
 }
 
 @media (max-width:480px){
+
+    .sponsors-area .single {
+       width: 45%;
+      }
 
     .content-wrapper{
         display: block;

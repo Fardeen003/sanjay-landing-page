@@ -712,6 +712,24 @@
     	margin-top: 15px;
 	}
 
+	.schedule-slot-info-content {
+		margin-left: 0px;
+	}
+
+  .content-wrapper{
+	margin:  20px auto;
+	text-align: center;
+  }
+
+  .content-wrapper>div{
+	text-align: center !important;
+	padding-bottom:0px !important;
+
+  }
+
+  .ts-exp-content{
+	margin-bottom: 0px;
+  }
 
 	/* Sponsor */
 
@@ -740,6 +758,11 @@
 	.sponsor-title{
 		margin-bottom: 40px;
 		font-size: 20px;
+	}
+
+	.text-white{
+		color: white;
+		padding-bottom: 0px;
 	}
 
 	/* Pricing */
