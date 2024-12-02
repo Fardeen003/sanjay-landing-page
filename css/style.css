@@ -107,6 +107,12 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+/* .nav li.active a {
+    color: #ff0000;
+    font-weight: bold; 
+} */
+
 a:link,
 a:visited {
     text-decoration: none;

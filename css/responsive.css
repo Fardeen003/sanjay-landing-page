@@ -431,8 +431,9 @@
 	.site-nav-inner{
 		width: 100%;
 		display: inline-block;
-		background: #1c1c1c;
-		background: rgba(0, 0, 0, 0.95);
+		/* background: #1c1c1c; */
+		background-color: white;
+		/* background: rgba(0, 0, 0, 0.95); */
 	}
 
 	.navbar-collapse{
@@ -530,7 +531,8 @@
 
 	.header ul.navbar-nav li a i, .dropdown-submenu>a:after {
    	background: #333;
-   	color: #fff;
+   	/* color: #fff; */
+	color: black;
  	}
 
 
@@ -814,11 +816,11 @@
 	}
 
 	#back-to-top.affix {
-	   bottom: 80px;
+	   bottom: 15px;
 	}
 
 	#back-to-top{
-		right: 10px;
+		right: 15px;
 	}
 
 	.copyright-info{

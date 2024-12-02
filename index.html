@@ -91,25 +91,40 @@
                 class="collapse navbar-collapse navbar-responsive-collapse pull-right"
               >
                 <ul class="nav navbar-nav">
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    onclick="navigateTo('#')"
                       >Home
                     </a>
                   </li>
                   <!-- Home li end -->
-                  <li class="dropdown">
-                    <a href="#ts-intro" class="dropdown-toggle"
+                  <li class="dropdown" 
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-intro')"
+                  >
+                    <a 
+                     href="#ts-intro"     
+                     class="dropdown-toggle"
                       >About 
                   </a>
                   </li>
                   <!-- About li end -->
-                  <li class="dropdown">
+                  <li class="dropdown"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-speakers')"
+                  >
                     <a href="#ts-speakers" class="dropdown-toggle"
                       >Speakers 
                     </a>
                   </li>
                   <!-- Speakers li end -->
-                  <li class="dropdown">
+                  <li class="dropdown"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-schedule')"
+                  >
                     <a href="#ts-schedule" class="dropdown-toggle"
                       >Schedule 
                     </a>
@@ -1894,7 +1909,7 @@
            <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
               alt="WhatsApp"
-              style="width: 65px; height: 65px; border-radius: 50%;"
+              style="width: 70px; height: 70px; border-radius: 50%;"
            />
         </a>
      </div>
@@ -1902,8 +1917,8 @@
      <style>
       #whatsapp-button {
          position: fixed;
-         bottom: 28px;
-         right: 100px;
+         bottom: 85px;
+         right: 30px;
          z-index: 1000;
       }
 
@@ -1915,8 +1930,8 @@
    
       @media (max-width: 520px) {
          #whatsapp-button {
-            right: 5px;
-            bottom: 15px;
+            right: 3px;
+            bottom: 70px;
          }
       }
    </style>
