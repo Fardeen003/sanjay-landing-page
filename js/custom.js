@@ -1,20 +1,3 @@
-/*
-
-	Template Name: Eventor - Conference & Event HTML Template
-	Author: Themewinter
-	Author URI: https://themeforest.net/user/themewinter
-	Description: Eventor - Conference & Event HTML Template
-	Version: 1.0
-
-	1. Mobile Menu
-	2. Main Slideshow
-	3. Gallery popup
-	4. Counter
-	5. Contact form
-	6. Back to top
-  
-*/
-
 jQuery(function ($) {
   "use strict";
 
