@@ -91,25 +91,40 @@
                 class="collapse navbar-collapse navbar-responsive-collapse pull-right"
               >
                 <ul class="nav navbar-nav">
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    onclick="navigateTo('#')"
                       >Home
                     </a>
                   </li>
                   <!-- Home li end -->
-                  <li class="dropdown">
-                    <a href="#ts-intro" class="dropdown-toggle"
+                  <li class="dropdown" 
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-intro')"
+                  >
+                    <a 
+                     href="#ts-intro"     
+                     class="dropdown-toggle"
                       >About 
                   </a>
                   </li>
                   <!-- About li end -->
-                  <li class="dropdown">
+                  <li class="dropdown"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-speakers')"
+                  >
                     <a href="#ts-speakers" class="dropdown-toggle"
                       >Speakers 
                     </a>
                   </li>
                   <!-- Speakers li end -->
-                  <li class="dropdown">
+                  <li class="dropdown"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  onclick="navigateTo('#ts-schedule')"
+                  >
                     <a href="#ts-schedule" class="dropdown-toggle"
                       >Schedule 
                     </a>
@@ -202,7 +217,7 @@
       <section id="ts-intro" class="ts-intro no-padding">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-xs-12 col-sm-12 ">
               <div class="gap-60"></div>
               <h2 class="intro-title">About the Event</h2>
               <!-- <h3 class="intro-sub-title">How it All Started</h3> -->
@@ -243,7 +258,7 @@
                 <p><button onclick="handleReadMore()" class="btn btn-primary read-more">Read More</button></p>
             </div>
             <!-- Col end -->
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6">
               <div class="intro-video">
                 <img
                   class="img-responsive"
@@ -259,8 +274,7 @@
                   </div>
                 </a>
               </div>
-              <!-- Intro video end -->
-            </div>
+            </div> -->
             <!-- Col end -->
           </div>
           <!-- Content row 1 end -->
@@ -346,11 +360,11 @@
                 <div class="ts-speaker-image">
                   <img
                     class="img-responsiv"
-                    src="images/speakers/profile-placeholder-1.png"
+                    src="images/speakers/ashish.jpeg"
                     alt=""
                     width="262"
                     height="276"
-                    style="object-fit: cover;"
+                    style="object-fit: cover;width: 100%;height: 100%;"
                   />
                   <ul class="social-links">
                     <!-- <li>
@@ -359,7 +373,7 @@
                       </a>
                     </li> -->
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://www.linkedin.com/in/aashishnagar-businesstransformation-headofoperationalexcellence/">
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </li>
@@ -378,7 +392,7 @@
                 <!--Image end -->
                 <div class="ts-speaker-info">
                   <h3 class="ts-speaker-name">
-                    <a href="#">Name</a>
+                    <a href="#">Aashish Nagar</a>
                   </h3>
                   <strong style="color:#6859de; font-size: 15px;">Designation</strong>
                   <p class="ts-speaker-designation">-Company</p>
@@ -393,11 +407,11 @@
                 <div class="ts-speaker-image">
                   <img
                     class="img-responsiv"
-                    src="images/speakers/profile-placeholder-1.png"
+                    src="images/speakers/sanjay.jpeg"
                     alt=""
                     width="262"
                     height="276"
-                    style="object-fit: cover;"
+                    style="object-fit: cover;width: 100%;height: 100%;"
                   />
                   <ul class="social-links">
                     <!-- <li>
@@ -406,7 +420,7 @@
                       </a>
                     </li> -->
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://www.linkedin.com/in/iamsanjaysaini/">
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </li>
@@ -425,7 +439,7 @@
                 <!--Image end -->
                 <div class="ts-speaker-info">
                   <h3 class="ts-speaker-name">
-                    <a href="#">Name</a>
+                    <a href="#">Sanjay Saini</a>
                   </h3>
                   <strong style="color:#6859de; font-size: 15px;">Designation</strong>
                   <p class="ts-speaker-designation">-Company</p>
@@ -442,9 +456,9 @@
                     class="img-responsiv"
                     src="images/speakers/profile-placeholder-1.png"
                     alt=""
-                    width="262"
-                    height="276"
-                    style="object-fit: cover;"
+                    width="360"
+                    height="360"
+                    style="object-fit: cover;width: 100%;"
                   />
                   <ul class="social-links">
                     <!-- <li>
@@ -490,9 +504,9 @@
                     class="img-responsiv"
                     src="images/speakers/profile-placeholder-1.png"
                     alt=""
-                    width="262"
-                    height="276"
-                    style="object-fit: cover;"
+                    width="360"
+                    height="360"
+                    style="object-fit: cover;width: 100%;"
                   />
                   <ul class="social-links">
                     <!-- <li>
@@ -537,9 +551,9 @@
                     class="img-responsiv"
                     src="images/speakers/profile-placeholder-1.png"
                     alt=""
-                    width="262"
-                    height="276"
-                    style="object-fit: cover;object-position: top;"
+                    width="360"
+                    height="360"
+                    style="object-fit: cover;object-position: top; width: 100%;"
                   />
                   <ul class="social-links">
                     <!-- <li>
@@ -577,7 +591,6 @@
               <!-- Speaker end -->
             </div>
             <!-- Speaker Col 2 end -->
-
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="ts-speaker transparent">
                 <div class="ts-speaker-image">
@@ -585,9 +598,9 @@
                     class="img-responsiv"
                     src="images/speakers/multiple1.jpg"
                     alt=""
-                    height="276"
-                    width="262"
-                    style="object-fit: cover;"
+                    height="360"
+                    width="360"
+                    style="object-fit: cover;  width: 100%;"
                   />
                   <ul class="social-links">
                     <li>
@@ -1894,7 +1907,7 @@
            <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
               alt="WhatsApp"
-              style="width: 65px; height: 65px; border-radius: 50%;"
+              style="width: 70px; height: 70px; border-radius: 50%;"
            />
         </a>
      </div>
@@ -1902,8 +1915,8 @@
      <style>
       #whatsapp-button {
          position: fixed;
-         bottom: 28px;
-         right: 100px;
+         bottom: 85px;
+         right: 30px;
          z-index: 1000;
       }
 
@@ -1915,8 +1928,8 @@
    
       @media (max-width: 520px) {
          #whatsapp-button {
-            right: 5px;
-            bottom: 15px;
+            right: 3px;
+            bottom: 70px;
          }
       }
    </style>

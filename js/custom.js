@@ -29,34 +29,27 @@ jQuery(function ($) {
 
   var pos = s.position();
 
-  $(window).on("scroll", function () {
+  $(window).on("scroll resize", function () {
     var windowpos = $(window).scrollTop();
+    var isMobile = $(window).width() <= 768;
 
     if (windowpos > pos.top) {
-      s.addClass("menu-onscroll");
-      console.log("nav--------->", nav);
-      nav.css("background-color", "transparent");
+        s.addClass("menu-onscroll");
     } else {
-      s.removeClass("menu-onscroll");
-      function checkWidth() {
-        if ($(window).width() <= 768) {
-          // Adjust the width as needed
-          $("nav").css("background-color", "black");
+        if (isMobile) {
+            s.addClass("menu-onscroll");
+            nav.css("background-color", "white");
         } else {
-          $("nav").css("background-color", ""); // Reset to default or another color
+            s.removeClass("menu-onscroll");
+            nav.css("background-color", "transparent"); // or whatever color you want
         }
-      }
-
-      // Check width on load
-      checkWidth();
-
-      // Check width on resize
-      $(window).resize(function () {
-        checkWidth();
-      });
-      //    nav.css("background-color","black");
     }
-  });
+});
+
+// Initial check on page load
+$(document).ready(function() {
+    $(window).trigger("resize"); // Trigger resize to set initial state
+});
 
   /*=========================================================================
    
@@ -69,6 +62,7 @@ jQuery(function ($) {
       /* ----------------------------------------------------------- */
 
   jQuery(".nav.navbar-nav li a").on("click", function () {
+    jQuery(this).toggleClass("active");
     jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
     jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
   });
